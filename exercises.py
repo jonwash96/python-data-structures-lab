@@ -43,3 +43,18 @@ def list_hometown_items(hometown):
         hometown_items.append(f"{key} = {val}")
     print(hometown_items)
 list_hometown_items(hometown)
+
+# EXERCISE 6: Celebrate Students
+def create_awesome_students(students):
+    print("\nEXERCISE 6 | Celebrate Students:")
+    def awesome(student): return student.capitalize()
+    awesome_students = [f"{s} is awesome" for s in students if s == awesome(s)]
+    print(awesome_students)
+create_awesome_students(students)
+
+# EXERCISE 7: Filter Foods
+def filter_foods_with_a(foods):
+    print("\nEXERCISE 7 | Filter Foods:")
+    foods_with_a = [food for food in foods if "a" in food]
+    print(foods_with_a)
+filter_foods_with_a(foods)
